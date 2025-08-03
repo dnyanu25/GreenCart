@@ -1,2 +1,8 @@
 //54:59 navbar complte
-// started poster block 1:6 :47
+// started poster block 1:6 :47 to 1:33
+
+
+// update
+git add .
+git commit -m "sc"
+git push
