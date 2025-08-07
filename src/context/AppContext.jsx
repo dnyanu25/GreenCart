@@ -1,7 +1,9 @@
 import { createContext,useContext,useEffect,useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { dummyProducts } from "../assets/assets";
-import toast from "react-hot-toast";
+
+import toast, { Toaster } from "react-hot-toast";
+
 
 export const AppContext = createContext();
 
@@ -12,9 +14,9 @@ export const AppContextProvider = ({ children }) => {
     const [user,setUser]=useState(null)
     const [isSeller,setIsSeller]=useState(false)
     const [showUserLogin,setShowUserLogin]=useState(false)
-    const [product,setProducts]=useState([])
+    const [products,setProducts]=useState([])
     const[cartItems,setCartItems]=useState({})
-    
+    const[searchQuery,setSearchQuery]=useState({})
     //fetch all products
             const fetchProducts= async()=>{
             setProducts(dummyProducts)
@@ -59,8 +61,8 @@ const removeFromCart = (itemId) => {
       
 
     const value = {navigate,user,setUser,setIsSeller,isSeller
-        ,showUserLogin,setShowUserLogin ,product,currency, addToCart 
-        ,updateCartItem ,removeFromCart ,cartItems 
+        ,showUserLogin,setShowUserLogin ,products,currency, addToCart 
+        ,updateCartItem ,removeFromCart ,cartItems ,searchQuery,setSearchQuery
     }
     
     return <AppContext.Provider value={value}>

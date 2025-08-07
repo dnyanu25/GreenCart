@@ -1,6 +1,6 @@
 //54:59 navbar complte
-// started poster block 1:6 :47 to 1:33
-
+// started poster block 1:6 :47 to 1:52 
+//product details 3:11:54 
 
 // update
 git add .
