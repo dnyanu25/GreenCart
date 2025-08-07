@@ -6,12 +6,12 @@ import ProductCard from '../components/ProductCard';
 
 const ProductCategory = () => {
 
-    const { product } = useAppContext()
+    const { Products } = useAppContext()
     const { category } = useParams()
 
     const searchCategory = categories.find((item) =>
         item.path.toLowerCase() === category)
-    const filteredProducts = product.filter((product) => product.category.toLowerCase() === category)
+    const filteredProducts = Products.filter((product) => product.category.toLowerCase() === category)
 
     return (
         <div className='mt-16 '>
@@ -34,8 +34,6 @@ const ProductCategory = () => {
                     <p className='text-2xl font-medium text-primary'>No Products found in this category</p>
 
                 </div>
-           
-         
          )}  
          </div>
     )

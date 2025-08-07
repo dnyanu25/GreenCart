@@ -14,7 +14,7 @@ export const AppContextProvider = ({ children }) => {
     const [user,setUser]=useState(null)
     const [isSeller,setIsSeller]=useState(false)
     const [showUserLogin,setShowUserLogin]=useState(false)
-    const [products,setProducts]=useState([])
+    const [Products,setProducts]=useState([])
     const[cartItems,setCartItems]=useState({})
     const[searchQuery,setSearchQuery]=useState({})
     //fetch all products
@@ -61,7 +61,7 @@ const removeFromCart = (itemId) => {
       
 
     const value = {navigate,user,setUser,setIsSeller,isSeller
-        ,showUserLogin,setShowUserLogin ,products,currency, addToCart 
+        ,showUserLogin,setShowUserLogin ,Products,currency, addToCart 
         ,updateCartItem ,removeFromCart ,cartItems ,searchQuery,setSearchQuery
     }
     

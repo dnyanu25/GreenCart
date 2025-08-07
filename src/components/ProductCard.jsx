@@ -6,7 +6,6 @@ const ProductCard = ({ product }) => {
     const [count, setCount] = React.useState(0);
     const { currency, addToCart, removeFromCart, cartItems, navigate } = useAppContext();
 
-
     return product && (
         <div onClick={() => 
             {navigate(`/products/${product.category.toLowerCase()}/${product._id}`); scrollTo(0, 0)
@@ -30,7 +29,6 @@ const ProductCard = ({ product }) => {
                         {currency}  ${product.offerPrice} {" "}<span className="text-gray-500/60 md:text-sm text-xs line-through">{currency}${product.price}</span>
                     </p>
                     <div onClick={(e) => e.stopPropagation()}
-
                         className="text-primary" >
                         {!cartItems[product._id] ? (
                             <button className="flex items-center justify-center gap-1 bg-primary/10 border border-primary/40 md:w-[80px] w-[64px] h-[34px] rounded  cursor-pointer " onClick={() => addToCart(product._id)} >

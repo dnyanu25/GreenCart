@@ -19,8 +19,6 @@ const Login = () => {
         setShowUserLogin(false);
      }
 
-     
-
         // Here you would typically handle the login or registration logic,
 
   return (
