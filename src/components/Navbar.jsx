@@ -1,7 +1,7 @@
 import React,{ useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { assets } from '../assets/assets'
-import { useAppContext} from '../context/AppContext'; // adjust the path as needed
+import { useAppContext} from '../context/AppContext'; 
 
 
 const Navbar = () => {
