@@ -68,8 +68,8 @@ const ProductDetails = () => {
                     </div>
 
                     <div className="mt-6">
-                        <p className="text-gray-500/70 line-through">MRP:{currency} ${product1.price}</p>
-                        <p className="text-2xl font-medium">MRP: {currency}${product1.offerPrice}</p>
+                        <p className="text-gray-500/70 line-through">MRP:{currency} {product1.price}</p>
+                        <p className="text-2xl font-medium">MRP: {currency}{product1.offerPrice}</p>
                         <span className="text-gray-500/70">(inclusive of all taxes)</span>
                     </div>
 
