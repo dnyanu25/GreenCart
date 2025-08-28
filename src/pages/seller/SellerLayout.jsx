@@ -1,6 +1,6 @@
 import { NavLink, Link, Outlet } from "react-router-dom";
 import { assets } from "../../assets/assets";
-import { useAppContext } from "../../context/appContext";
+import { useAppContext } from "../../context/AppContext";
 //... rest of your code
 
 
