@@ -85,7 +85,7 @@ md:hidden z-40`}>
                     {user &&
                         <NavLink to='/products' onClick={() => setOpen(false)}>My Orders</NavLink>
                     }
-                    <NavLink to='/' onClick={() => setOpen(false)}> Contact</NavLink>
+                    <NavLink to='/contact' onClick={() => setOpen(false)}> Contact</NavLink>
 
                     {!user ? (
                         <button onClick={() => {
